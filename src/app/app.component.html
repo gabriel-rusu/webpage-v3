@@ -1,4 +1,9 @@
-<app-event eventName="Master's degree, Artificial Intelligence" start="2022" end="2024"></app-event>
+<app-event *ngFor="let education of resumeData?.education"
+           eventName="{{education.degree}}"
+           start="{{education.timePeriod?.startDate}}"
+           end="{{education.timePeriod?.endDate}}"></app-event>
 
 
-<button (click)="changeTheme()" class="border-opacity-100 bg-blue-700 dark:bg-red-50 rounded-sm" type="button">Change Theme</button>
+<button (click)="changeTheme()" class="border-opacity-100
+bg-white dark:bg-amber-500
+ rounded-sm" type="button">Change Theme</button>

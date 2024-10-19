@@ -2,3 +2,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.svg-theme {
+  filter: invert(43%) sepia(8%) saturate(587%) hue-rotate(169deg) brightness(93%) contrast(86%);
+}
+
+.dark  .svg-theme {
+    filter: invert(100%) sepia(41%) saturate(0%) hue-rotate(111deg) brightness(109%) contrast(100%);
+  }
+
+
+.changelog-line:before {
+  border-left: 2px solid #d8dee4;
+  content: "";
+  height: 100%;
+  left: 37px;
+  position: absolute;
+  top: 32px;
+}
