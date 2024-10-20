@@ -1,7 +1,19 @@
-<app-event *ngFor="let education of resumeData?.education"
-           eventName="{{education.degree}}"
-           start="{{education.timePeriod?.startDate}}"
-           end="{{education.timePeriod?.endDate}}"></app-event>
+<div>
+  <app-event *ngFor="let education of resumeData?.education; let i=index"
+             [eventName]="education.degree"
+             [institution]="education.faculty"
+             start="{{education.timePeriod?.startDate}}"
+             end="{{education.timePeriod?.endDate}}" [isLast]="i == 0"></app-event>
+</div>
+
+<div>
+
+  <app-event *ngFor="let job of resumeData?.experience; let i=index"
+             [eventName]="job.position"
+             [institution]="job.company"
+             start="{{job.timePeriod?.startDate}}"
+             end="{{job.timePeriod?.endDate}}" [isLast]="i == 0"></app-event>
+</div>
 
 
 <button (click)="changeTheme()" class="border-opacity-100

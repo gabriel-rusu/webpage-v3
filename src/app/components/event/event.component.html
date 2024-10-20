@@ -1,12 +1,33 @@
-<article class="text-slate-900 dark:text-white changelog-line ml-6">
-  <div class="flex items-center sticky top-0">
-    <img ngSrc="git-commit.svg" alt="event" height="32" width="32" class="svg-theme dark:svg-theme filter">
-    <p class="inline ml-1.5 mt-1 font-extrabold">{{ eventName }}</p>
+<article class="text-slate-900 dark:text-white ml-6 relative " [ngClass]="{'changelog-line': isLast}">
+  <div class="lg:grid lg:grid-flow-col md:grid md:grid-flow-col lg:grid-cols-3 md:grid-cols-3">
+    <div>
+      <div class="sticky top-0">
+        <div class="flex items-center dark:bg-gray-800 bg-white">
+          <img ngSrc="git-commit.svg" alt="event" height="32" width="32" class="svg-theme dark:svg-theme ">
+          <p class="inline ml-1.5 mt-1 font-extrabold">{{ eventName }}</p>
+        </div>
+        <p class="ml-10 mt-1">{{institution}}</p>
+        <div class="flex items-center ml-10">
+          <img ngSrc="calendar.svg" alt="event" height="24" width="24" class="svg-theme dark:svg-theme filter"/>
+          <p class="inline ml-4 mt-1 ">{{ start }} - {{ end }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-1.5 pl-10 pr-10 grid-cols-subgrid col-span-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+      Duis sagittis ipsum.
+      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+      Duis sagittis ipsum.
+      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+      Duis sagittis ipsum.
+      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </div>
   </div>
-  <p class="ml-20 mt-1 ">Faculty of Automatic Control and Computers</p>
-  <div class="flex items-center ml-10">
-    <img ngSrc="calendar.svg" alt="event" height="24" width="24"/>
-    <p class="inline ml-4 mt-1">{{ start }} - {{ end }}</p>
-  </div>
+
 </article>
 
