@@ -3,7 +3,7 @@
              [eventName]="education.degree"
              [institution]="education.faculty"
              start="{{education.timePeriod?.startDate}}"
-             end="{{education.timePeriod?.endDate}}" [isLast]="i == 0"></app-event>
+             end="{{education.timePeriod?.endDate}}" [isNotLast]="i == 0"></app-event>
 </div>
 
 <div>
@@ -12,7 +12,7 @@
              [eventName]="job.position"
              [institution]="job.company"
              start="{{job.timePeriod?.startDate}}"
-             end="{{job.timePeriod?.endDate}}" [isLast]="i == 0"></app-event>
+             end="{{job.timePeriod?.endDate}}" [isNotLast]="i == 0"></app-event>
 </div>
 
 

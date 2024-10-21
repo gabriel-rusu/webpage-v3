@@ -89,6 +89,15 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "webpage-v3:build:production",
+            "cname": "gabriel-rusu.dev",
+            "repo": "https://github.com/gabriel-rusu/webpage-v3.git",
+            "branch": "production"
+          }
         }
       }
     }

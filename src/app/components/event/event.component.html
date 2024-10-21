@@ -1,7 +1,7 @@
-<article class="text-slate-900 dark:text-white ml-6 relative " [ngClass]="{'changelog-line': isLast}">
+<article class="text-slate-900 dark:text-white ml-6 relative " [ngClass]="{'changelog-line': isNotLast}">
   <div class="lg:grid lg:grid-flow-col md:grid md:grid-flow-col lg:grid-cols-3 md:grid-cols-3">
     <div>
-      <div class="sticky top-0">
+      <div [ngClass]="{'sticky top-0': isNotLast}">
         <div class="flex items-center dark:bg-gray-800 bg-white">
           <img ngSrc="git-commit.svg" alt="event" height="32" width="32" class="svg-theme dark:svg-theme ">
           <p class="inline ml-1.5 mt-1 font-extrabold">{{ eventName }}</p>
