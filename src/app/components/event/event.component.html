@@ -4,11 +4,11 @@
       <div [ngClass]="{'sticky top-0': isNotLast}">
         <div class="flex items-center dark:bg-gray-800 bg-white">
           <img ngSrc="git-commit.svg" alt="event" height="32" width="32" class="svg-theme dark:svg-theme ">
-          <p class="inline ml-1.5 mt-1 font-extrabold">{{ eventName }}</p>
+          <p class="inline ml-1.5 mt-1 font-extrabold text-3xl">{{ eventName }}</p>
         </div>
-        <p class="ml-10 mt-1">{{institution}}</p>
+        <p class="ml-10 mt-1 text-xl">{{institution}}</p>
         <div class="flex items-center ml-10">
-          <img ngSrc="calendar.svg" alt="event" height="24" width="24" class="svg-theme dark:svg-theme filter"/>
+          <img ngSrc="calendar.svg" alt="event" height="24" width="24" class="svg-theme dark:svg-theme"/>
           <p class="inline ml-4 mt-1 ">{{ start }} - {{ end }}</p>
         </div>
       </div>
