@@ -10,11 +10,6 @@
   </div>
 </div>
 
-
-
-
-
-
 <section></section>
 <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Experience</h2>
 <section class="pb-10">
@@ -23,8 +18,8 @@
              [eventName]="job.position"
              [institution]="job.company"
              [description]="job.description"
-             start="{{job.timePeriod?.startDate}}"
-             end="{{job.timePeriod?.endDate}}" [isNotLast]="i == 0"></app-event>
+             start="{{job.timePeriod.startDate}}"
+             end="{{job.timePeriod.endDate}}" [isNotLast]="i == 0"></app-event>
 </section>
 <hr/>
 <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Education</h2>
