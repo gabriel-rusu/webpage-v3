@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, HostBinding, Input} from '@angular/core';
 import {NgIf} from "@angular/common";
 
 @Component({
@@ -11,7 +11,8 @@ import {NgIf} from "@angular/common";
   styleUrl: './theme-selector.component.css'
 })
 export class ThemeSelectorComponent {
-   isDarkTheme: boolean = true;
+  @HostBinding('class') classes = 'absolute right-4 top-4'
+  isDarkTheme: boolean = true;
 
 
   changeTheme() {
