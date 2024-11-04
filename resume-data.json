@@ -3,10 +3,24 @@
     {
       "position": "Team Lead & Software Engineer",
       "company": "CBN International Europe",
-      "description":{
-        "techStack": "",
-        "responsibilities": "",
-        "achievements": ""
+      "jobDescription":{
+        "techStack": [
+          "Java",
+          "Angular",
+          "TypeScript",
+          "JavaScript"
+        ],
+        "responsibilities": [
+          "Code review",
+          "Fixing production problem",
+          "Contributing to the ongoing projects",
+          "Offering technical support for other colleagues"
+        ],
+        "achievements": [
+          "Worked on implementing some of the most important applications for the Romanian DMV system",
+          "Organized, scheduled and managed a team of 4 in implementing the new apps that allows dealers to provisionally register new cars online",
+          "Designing a pleasant and intuitive design for the new apps"
+        ]
       },
       "timePeriod": {
         "startDate": "03/07/2023",
@@ -16,10 +30,15 @@
     {
       "position": "Software Engineer",
       "company": "CBN International Europe",
-      "description":{
-        "techStack": "",
-        "responsibilities": "",
-        "achievements": ""
+      "jobDescription":{
+        "techStack": [
+          "Java",
+          "Angular",
+          "TypeScript",
+          "JavaScript"
+        ],
+        "responsibilities": [""],
+        "achievements": [""]
       },
       "timePeriod": {
         "startDate": "01/12/2019",
