@@ -8,26 +8,24 @@
 </div>
 
 <section></section>
-<h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Experience</h2>
-<section class="pb-10">
-
-  <app-event *ngFor="let job of resumeData?.experience; let i=index"
-             [eventName]="job.position"
-             [institution]="job.company"
-             [description]="job.description"
-             start="{{job.timePeriod.startDate}}"
-             end="{{job.timePeriod.endDate}}" [isNotLast]="i == 0"></app-event>
-</section>
+<app-section sectionName="Experience">
+  @for(job of resumeData.experience; track job.jobDescription) {
+  <app-job-position [job]="job" [isNonLast]="$index !== $count - 1"></app-job-position>
+  }
+</app-section>
 <hr/>
-<h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Education</h2>
-<section >
+<app-section sectionName="Education">
+
   <app-event *ngFor="let education of resumeData?.education; let i=index"
              [eventName]="education.degree"
-             [institution]="education.faculty"
+             [place]="education.faculty"
              [description]="education.description"
              start="{{education.timePeriod?.startDate}}"
              end="{{education.timePeriod?.endDate}}" [isNotLast]="i == 0"></app-event>
-</section>
+</app-section>
+<!--  @for(eduction of resumeData?.education; track eduction.degree) {-->
+<!--  }-->
+
 
 <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Online Courses</h2>
 

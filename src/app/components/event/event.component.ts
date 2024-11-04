@@ -16,6 +16,6 @@ export class EventComponent {
   @Input() start: string = '';
   @Input() end: string = '';
   @Input() isNotLast!: boolean;
-  @Input() institution: string = '';
+  @Input() place: string = '';
   @Input() description: string = '';
 }

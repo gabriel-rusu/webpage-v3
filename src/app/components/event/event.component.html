@@ -6,7 +6,7 @@
           <img ngSrc="git-commit.svg" alt="event" height="32" width="32" class="svg-theme dark:svg-theme ">
           <p class="inline ml-1.5 mt-1 font-extrabold text-3xl">{{ eventName }}</p>
         </div>
-        <p class="ml-10 mt-1 text-xl">{{institution}}</p>
+        <p class="ml-10 mt-1 text-xl">{{place}}</p>
         <div class="flex items-center ml-10">
           <img ngSrc="calendar.svg" alt="event" height="24" width="24" class="svg-theme dark:svg-theme"/>
           <p class="inline ml-4 mt-1 ">{{ start }} - {{ end }}</p>
@@ -14,18 +14,9 @@
       </div>
     </div>
     <div class="pt-1.5 pl-10 pr-10 grid-cols-subgrid col-span-2">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-      Duis sagittis ipsum.
-      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-      Duis sagittis ipsum.
-      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-      Duis sagittis ipsum.
-      Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+      <ng-content>
+
+      </ng-content>
     </div>
   </div>
 
