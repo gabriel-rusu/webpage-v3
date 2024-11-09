@@ -1,12 +1,7 @@
 
 <app-theme-selector></app-theme-selector>
-
-<img src="profile-picture.jpeg" class="w-96 pt-10 ml-auto mr-auto block" style="border-radius: 50% "/>
-
-
-
-
-
+@if(resumeData) {
+<img src="profile-picture.jpeg" class="w-96 pt-10 ml-auto mr-auto block" style="border-radius: 50% " alt="Me at Duomo di Milano"/>
 <app-section sectionName="About" class="grid place-items-center">
   <p >
     I’m a {{age}}-year-old team lead and software engineer, blending practical systems engineering skills with strategic team
@@ -35,5 +30,5 @@
 
 
 <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">Online Courses</h2>
-
+}
 <section></section>

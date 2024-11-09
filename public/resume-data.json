@@ -3,7 +3,7 @@
     {
       "position": "Team Lead & Software Engineer",
       "company": "CBN International Europe",
-      "jobDescription":{
+      "jobDescription": {
         "techStack": [
           "Java",
           "Angular",
@@ -12,14 +12,14 @@
         ],
         "responsibilities": [
           "Code review",
-          "Fixing production problem",
-          "Contributing to the ongoing projects",
+          "Fixing production problems",
+          "Contributing to ongoing projects",
           "Offering technical support for other colleagues"
         ],
         "achievements": [
           "Worked on implementing some of the most important applications for the Romanian DMV system",
-          "Organized, scheduled and managed a team of 4 in implementing the new apps that allows dealers to provisionally register new cars online",
-          "Designing a pleasant and intuitive design for the new apps"
+          "Organized, scheduled, and managed a team of 4 in implementing new apps that allow dealers to provisionally register new cars online",
+          "Designed a pleasant and intuitive UI for the new apps"
         ]
       },
       "timePeriod": {
@@ -30,15 +30,24 @@
     {
       "position": "Software Engineer",
       "company": "CBN International Europe",
-      "jobDescription":{
+      "jobDescription": {
         "techStack": [
           "Java",
           "Angular",
           "TypeScript",
           "JavaScript"
         ],
-        "responsibilities": [""],
-        "achievements": [""]
+        "responsibilities": [
+          "Developed and maintained backend services and APIs to support front-end applications",
+          "Collaborated with cross-functional teams on feature planning and implementation",
+          "Participated in daily stand-ups, sprint planning, and retrospectives",
+          "Provided support for code troubleshooting and debugging"
+        ],
+        "achievements": [
+          "Played a key role in developing an online vehicle registration system used across multiple regions",
+          "Improved codebase efficiency, reducing runtime by 20%",
+          "Promoted code quality by implementing a standardized testing suite"
+        ]
       },
       "timePeriod": {
         "startDate": "01/12/2019",
@@ -62,27 +71,27 @@
     {
       "degree": "Bachelor's degree, Systems Engineering",
       "faculty": "Faculty of Automatic Control and Computers",
-      "university": "",
+      "university": "UNIVERSITY POLITEHNICA OF BUCHAREST",
       "timePeriod": {
         "startDate": "25/09/2017",
         "endDate": "04/07/2021"
       },
-
       "description": "I studied the following courses ...",
       "achievements": "",
       "finalGrade": "9.37"
     }
   ],
   "passions": [
-    "coding", "hiking", "reading", "traveling"
+    "coding",
+    "hiking",
+    "reading",
+    "traveling"
   ],
   "contactMe": [
     {
       "platform": "LinkedIn",
-      "url": "",
-      "icon": ""
+      "url": "https://www.linkedin.com/in/your-profile",
+      "icon": "https://example.com/linkedin-icon.png"
     }
   ]
-
-
 }

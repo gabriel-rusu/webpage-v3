@@ -28,6 +28,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient.get('/resume-data.json').subscribe(((res: any) => {
       this.resumeData = res
+      console.log('Here ?');
+      console.log(res)
     }));
   }
 }
