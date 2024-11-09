@@ -18,7 +18,7 @@ import {JobPositionComponent} from "./components/job-position/job-position.compo
 export class AppComponent implements OnInit {
   title = 'webpage-v3';
   resumeData!: Resume;
-  isDarkTheme: boolean = true;
+  age: any = new Date().getFullYear() - new Date(1998, 0).getFullYear();
 
   constructor(private httpClient: HttpClient) {
 

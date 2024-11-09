@@ -1,20 +1,27 @@
 
-<div class="md:grid md:grid-flow-col grid-cols-8">
-  <div class="grid-cols-subgrid col-span-7">
+<app-theme-selector></app-theme-selector>
 
-    <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">About</h2>
-  </div>
-    <app-theme-selector ></app-theme-selector>
-</div>
+<img src="profile-picture.jpeg" class="w-96 pt-10 ml-auto mr-auto block" style="border-radius: 50% "/>
 
-<section></section>
-<app-section sectionName="Experience">
-  @for(job of resumeData.experience; track job.jobDescription) {
-  <app-job-position [job]="job" [isNonLast]="$index !== $count - 1"></app-job-position>
+
+
+
+
+<app-section sectionName="About" class="grid place-items-center">
+  <p >
+    I’m a {{age}}-year-old team lead and software engineer, blending practical systems engineering skills with strategic team
+    leadership. My master’s degree in AI adds depth to my technical background, making me open to incorporating
+    innovative AI-driven approaches where they align with project goals.
+  </p>
+</app-section>
+
+<app-section sectionName="Experience" class="grid place-items-center">
+  @for (job of resumeData.experience; track job.jobDescription) {
+    <app-job-position [job]="job" [isNonLast]="$index !== $count - 1"></app-job-position>
   }
 </app-section>
 <hr/>
-<app-section sectionName="Education">
+<app-section sectionName="Education" class="grid place-items-center">
 
   <app-event *ngFor="let education of resumeData?.education; let i=index"
              [eventName]="education.degree"
