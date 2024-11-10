@@ -65,7 +65,10 @@
         "endDate": "11/09/2024"
       },
       "description": "I was one of the top students in my program, receiving a merit scholarship for my academic performance. I received the grade 10 for my diploma project which was centered on 'Pedestrian detection and tracking for Autonomous Vehicles'",
-      "achievements": "",
+      "achievements": [
+        "I was one of the top students in my program, receiving a merit scholarship for my academic performance",
+        "Worked on various projects including an autopilot project for drone flight based on color segmentation & scene understanding"
+      ],
       "finalGrade": "10"
     },
     {
@@ -77,7 +80,7 @@
         "endDate": "04/07/2021"
       },
       "description": "I studied the following courses ...",
-      "achievements": "",
+      "achievements": [""],
       "finalGrade": "9.37"
     }
   ],
