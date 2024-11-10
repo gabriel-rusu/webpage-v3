@@ -6,5 +6,6 @@ export interface EducationType {
   university: string;
   description: string;
   timePeriod?: TimePeriod;
+  achievements: string[];
   finalGrade?: string;
 }

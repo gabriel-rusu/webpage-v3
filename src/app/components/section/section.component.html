@@ -1,5 +1,7 @@
-<h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">{{ sectionName }}</h2>
 <section #sectionContent class="pb-10" style="min-height: 100vh" [ngClass]="{'my-hidden':myHidden, show}">
+  @if (sectionName) {
+    <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10">{{ sectionName }}</h2>
+  }
   <ng-content></ng-content>
 </section>
 <hr/>

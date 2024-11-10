@@ -11,7 +11,7 @@ import {NgClass} from "@angular/common";
   styleUrl: './section.component.css'
 })
 export class SectionComponent implements AfterViewInit {
-  @Input({required: true}) sectionName!: string;
+  @Input({required: false}) sectionName?: string;
   // @HostBinding('class') classes: any = {'hidden': true}
   @ViewChild('sectionContent') section: any;
   private observer: IntersectionObserver | undefined;

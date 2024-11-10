@@ -7,11 +7,13 @@ import {Resume} from "./types/resume";
 import {ThemeSelectorComponent} from "./components/theme-selector/theme-selector.component";
 import {SectionComponent} from "./components/section/section.component";
 import {JobPositionComponent} from "./components/job-position/job-position.component";
+import {EducationDegreeComponent} from "./components/education-degree/education-degree.component";
+import {DynamicTypingComponent} from "./components/dynamic-typing/dynamic-typing.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgOptimizedImage, EventComponent, NgForOf, ThemeSelectorComponent, SectionComponent, JobPositionComponent],
+  imports: [RouterOutlet, NgOptimizedImage, EventComponent, NgForOf, ThemeSelectorComponent, SectionComponent, JobPositionComponent, EducationDegreeComponent, DynamicTypingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

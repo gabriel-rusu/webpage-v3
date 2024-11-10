@@ -1,1 +1,21 @@
-<p>education-degree works!</p>
+<app-event [eventName]="education.degree" [place]="placeOfEducation"
+          start="{{education.timePeriod?.startDate}}"
+          end="{{education.timePeriod?.endDate}}"
+          [isNotLast]="isNotLast">
+  <div>
+
+    <span class="font-bold"></span>
+    <span class="font-bold">Achievements:</span>
+    <ul class="list-disc pl-10 pb-2">
+      @for (achievement of education.achievements; track achievement) {
+        <li>{{achievement}}</li>
+      }
+    </ul>
+    <span class="font-bold">Final Grade: </span>
+    <span>{{education.finalGrade}}</span>
+
+  </div>
+
+
+
+</app-event>
