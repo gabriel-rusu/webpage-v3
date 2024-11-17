@@ -53,10 +53,14 @@
   <app-section sectionName="Education" class="grid place-items-center">
     @for (education of resumeData.education; track education) {
       <app-education-degree [education]="education" [isNotLast]="$index !== $count - 1">
+  <div class="lg:px-10 py-10">
 
       </app-education-degree>
     }
   </app-section>
   <app-section sectionName="Online Courses" class="grid place-items-center"></app-section>
+  </div>
+} @else {
+  <app-loading-screen></app-loading-screen>
 }
 
