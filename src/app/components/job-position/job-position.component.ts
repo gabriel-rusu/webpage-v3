@@ -1,4 +1,4 @@
-import {Component, HostBinding, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {EventComponent} from "../event/event.component";
 import {Job} from "../../types/job";
 

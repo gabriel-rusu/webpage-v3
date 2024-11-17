@@ -1,4 +1,32 @@
 {
+  "intro": {
+    "socialIcons": [
+      {
+        "alt": "GitHub Link",
+        "link": "https://github.com/gabriel-rusu",
+        "iconSrc": "github.svg"
+      },
+      {
+        "alt": "LinkedIn Link",
+        "link": "https://www.linkedin.com/in/grusu13",
+        "iconSrc": "linkedin.svg"
+      },
+      {
+        "alt": "Instagram Link",
+        "link": "https://www.instagram.com/gabriel.rusu.dev",
+        "iconSrc": "instagram.svg"
+      }
+    ]
+  },
+  "about": {
+    "description": "I’m a team lead and software engineer, blending practical systems engineering skills with strategic team leadership. My master’s degree in AI adds depth to my technical background, making me open to incorporating innovative AI-driven approaches where they align with project goals.",
+    "passions": [
+      "code",
+      "hike",
+      "read",
+      "travel"
+    ]
+  },
   "experience": [
     {
       "position": "Team Lead & Software Engineer",
@@ -80,21 +108,10 @@
         "endDate": "04/07/2021"
       },
       "description": "I studied the following courses ...",
-      "achievements": [""],
+      "achievements": [
+        ""
+      ],
       "finalGrade": "9.37"
-    }
-  ],
-  "passions": [
-    "coding",
-    "hiking",
-    "reading",
-    "traveling"
-  ],
-  "contactMe": [
-    {
-      "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/your-profile",
-      "icon": "https://example.com/linkedin-icon.png"
     }
   ]
 }

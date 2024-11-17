@@ -4,7 +4,9 @@
 @tailwind utilities;
 
 body {
-  font-family: "Doto", sans-serif;;
+  /*font-family: "Doto", sans-serif;*/
+  /*font-family: "Edu AU VIC WA NT Pre", cursive;*/
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .mouse-icon {
@@ -105,3 +107,12 @@ body {
   top: 32px;
 }
 
+
+
+.dark .dark-filter-svg {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(13%) saturate(325%) hue-rotate(202deg) brightness(113%) contrast(98%);
+}
+
+ .dark-filter-svg{
+  filter: brightness(0) saturate(100%) invert(10%) sepia(2%) saturate(34%) hue-rotate(314deg) brightness(97%) contrast(89%);
+}
