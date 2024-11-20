@@ -1,6 +1,25 @@
 {
+  "intro": {
+    "socialIcons": [
+      {
+        "alt": "GitHub Link",
+        "link": "https://github.com/gabriel-rusu",
+        "iconSrc": "github.svg"
+      },
+      {
+        "alt": "LinkedIn Link",
+        "link": "https://www.linkedin.com/in/grusu13",
+        "iconSrc": "linkedin.svg"
+      },
+      {
+        "alt": "Instagram Link",
+        "link": "https://www.instagram.com/gabriel.rusu.dev",
+        "iconSrc": "instagram.svg"
+      }
+    ]
+  },
   "about": {
-    "intro": "I’m a team lead and software engineer, blending practical systems engineering skills with strategic team leadership. My master’s degree in AI adds depth to my technical background, making me open to incorporating innovative AI-driven approaches where they align with project goals.",
+    "description": "I’m a team lead and software engineer, blending practical systems engineering skills with strategic team leadership. My master’s degree in AI adds depth to my technical background, making me open to incorporating innovative AI-driven approaches where they align with project goals.",
     "passions": [
       "code",
       "hike",
@@ -88,18 +107,13 @@
         "startDate": "25/09/2017",
         "endDate": "04/07/2021"
       },
-      "description": "I studied the following courses ...",
+      "description": "I studied a broad range of courses from Programming Languages (C) and Object Oriented Programming (C++) to Operating Systems, Advanced Computing Architectures and Web Apps developed in Java. During this period I developed a lot as a Developer and as a person building a lot of apps and learning from my mistakes.",
       "achievements": [
-        ""
+        "earned merit scholarship for my academic performance",
+        "competed in multiple hackathons and placed 3rd in the DevHacks Hackathon",
+        "completed a Game Dev bootcamp organized by GameLoft where I developed a game engine and learned all the nits and bolts of how game engines work"
       ],
       "finalGrade": "9.37"
-    }
-  ],
-  "contactMe": [
-    {
-      "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/your-profile",
-      "icon": "https://example.com/linkedin-icon.png"
     }
   ]
 }
