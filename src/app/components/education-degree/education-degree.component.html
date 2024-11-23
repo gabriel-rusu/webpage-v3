@@ -4,7 +4,8 @@
           [isNotLast]="isNotLast">
   <div>
 
-    <span class="font-bold"></span>
+    <span class="font-bold">Description:</span>
+    <p>{{education.description}}</p>
     <span class="font-bold">Achievements:</span>
     <ul class="list-disc pl-10 pb-2">
       @for (achievement of education.achievements; track achievement) {

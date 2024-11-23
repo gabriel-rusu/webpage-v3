@@ -107,9 +107,11 @@
         "startDate": "25/09/2017",
         "endDate": "04/07/2021"
       },
-      "description": "I studied the following courses ...",
+      "description": "I studied a broad range of courses from Programming Languages (C) and Object Oriented Programming (C++) to Operating Systems, Advanced Computing Architectures and Web Apps developed in Java. During this period I developed a lot as a Developer and as a person building a lot of apps and learning from my mistakes.",
       "achievements": [
-        ""
+        "earned merit scholarship for my academic performance",
+        "competed in multiple hackathons and placed 3rd in the DevHacks Hackathon",
+        "completed a Game Dev bootcamp organized by GameLoft where I developed a game engine and learned all the nits and bolts of how game engines work"
       ],
       "finalGrade": "9.37"
     }
