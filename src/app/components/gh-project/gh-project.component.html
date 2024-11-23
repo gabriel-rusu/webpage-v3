@@ -1,5 +1,17 @@
-<div class="rounded-md border-2 dark:border-white border-black min-h-52">
-  <p class="font-bold"><a href="{{project.html_url}}">{{project.name}}</a> - (stars {{project.stargazers_count}})</p>
-  <span>{{project.description}}</span>
-  <p>Updated on: {{project.updated_at | date:'dd/LL/yyyy'}}</p>
+<div class="rounded-lg border-2 drop-shadow-md dark:border-slate-800 border-slate-50 min-h-52 dark:bg-slate-800 m-5 p-5 bg-slate-50">
+  <header class="mb-6">
+    <h4 class="font-bold "><a href="{{project.html_url}}" class="hover:text-yellow-500">{{project.name}}</a> &nbsp;
+      <img ngSrc="star.png" [width]="15" [height]="15" class="inline" alt="star icon"/> {{project.stargazers_count}}
+      <img ngSrc="git-fork.svg" [width]="20" [height]="20" alt="git fork icon" class="inline svg-theme dark:svg-theme">
+      {{project.forks}}
+    </h4>
+  </header>
+  <article>
+    <span>{{project.description}}</span>
+  </article>
+  <footer class="mt-6">
+  <p>
+    <span>Updated on: {{project.updated_at | date:'dd/LL/yyyy'}}</span>
+  </p>
+  </footer>
 </div>
