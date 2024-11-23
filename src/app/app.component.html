@@ -3,7 +3,7 @@
   <div class="lg:px-10 py-10">
     <app-section>
       <div class="h-screen flex flex-col items-center justify-center pb-40">
-        <img src="profile-picture.jpeg" class="w-80 mx-auto block" style="border-radius: 50% "
+        <img ngSrc="profile-picture.jpeg" class="mx-auto block" [width]="320" [height]="320" style="border-radius: 50% "
              alt="Me at Duomo di Milano"/>
         <div class="text-center pt-5">
           <h1 class="text-4xl font-bold">
@@ -22,7 +22,7 @@
           </section>
 
       <section class="mt-16">
-          <div class="mouse-icon">
+          <div class="mouse-icon dark-filter-svg dark:dark-filter-svg">
             <svg
               width="19"
               height="30"
@@ -71,7 +71,22 @@
         </app-education-degree>
       }
     </app-section>
-    <app-section sectionName="Projects"></app-section>
+    <app-section sectionName="Projects">
+      <div class="grid grid-flow-row md:grid-cols-2 grid-cols-1">
+        <section >
+          <h2 class="px-5 text-2xl font-bold">Most liked projects</h2>
+        @for(project of mostStarredProjects; track project.id) {
+          <app-gh-project [project]="project"></app-gh-project>
+        }
+      </section>
+        <section>
+          <h2 class="px-5 text-2xl font-bold">Recently updated</h2>
+          @for(project of recentlyUpdatedProjects; track project.id) {
+            <app-gh-project [project]="project" class="dark:highlight-white/5"></app-gh-project>
+          }
+        </section>
+      </div>
+    </app-section>
     <app-section sectionName="Online Courses"></app-section>
     <app-section sectionName="Contact me"></app-section>
   </div>
