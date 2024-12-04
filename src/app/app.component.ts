@@ -11,6 +11,7 @@ import {LoadingScreenComponent} from "./components/loading-screen/loading-screen
 import {GitHubClientService} from "./services/git-hub-client.service";
 import {GitHubProject} from "./types/github-projects.type";
 import {GhProjectComponent} from "./components/gh-project/gh-project.component";
+import {ContactFormComponent} from "./components/contact-form/contact-form.component";
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import {GhProjectComponent} from "./components/gh-project/gh-project.component";
     EducationDegreeComponent,
     DynamicTypingComponent,
     LoadingScreenComponent,
-    GhProjectComponent
+    GhProjectComponent,
+    ContactFormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

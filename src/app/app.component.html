@@ -73,21 +73,25 @@
     </app-section>
     <app-section sectionName="Projects">
       <div class="grid grid-flow-row md:grid-cols-2 grid-cols-1">
-        <section >
+        <section>
           <h2 class="px-5 text-2xl font-bold">Most liked projects</h2>
-        @for(project of mostStarredProjects; track project.id) {
-          <app-gh-project [project]="project"></app-gh-project>
-        }
-      </section>
+          @for (project of mostStarredProjects; track project.id) {
+            <app-gh-project [project]="project"></app-gh-project>
+          }
+        </section>
         <section>
           <h2 class="px-5 text-2xl font-bold">Recently updated</h2>
-          @for(project of recentlyUpdatedProjects; track project.id) {
+          @for (project of recentlyUpdatedProjects; track project.id) {
             <app-gh-project [project]="project" class="dark:highlight-white/5"></app-gh-project>
           }
         </section>
       </div>
     </app-section>
-    <app-section sectionName="Contact me"></app-section>
+    <app-section sectionName="Contact me">
+      <app-contact-form>
+
+      </app-contact-form>
+    </app-section>
   </div>
 } @else {
   <app-loading-screen></app-loading-screen>
