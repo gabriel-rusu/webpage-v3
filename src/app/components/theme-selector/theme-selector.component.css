@@ -1,0 +1,63 @@
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.2rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle-switch[aria-checked="true"] {
+  background-color: #1e293b;
+  justify-content: flex-end;
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun {
+  color: #facc15;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.moon {
+  color: #94a3b8;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.toggle-switch[aria-checked="true"] .sun {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.toggle-switch[aria-checked="true"] .moon {
+  opacity: 1;
+  transform: scale(1);
+}

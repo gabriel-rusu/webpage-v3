@@ -1,18 +1,17 @@
-import {Component, HostBinding, Input} from '@angular/core';
+import {Component, HostBinding, Input, ViewChild} from '@angular/core';
 import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-theme-selector',
   standalone: true,
-  imports: [
-    NgIf
-  ],
   templateUrl: './theme-selector.component.html',
   styleUrl: './theme-selector.component.css'
 })
 export class ThemeSelectorComponent {
   @HostBinding('class') classes = 'absolute right-4 top-4'
   isDarkTheme: boolean = true;
+  isDarkMode: boolean = false;
+  @ViewChild('toggle') toggle: any;
 
 
   changeTheme() {
@@ -28,4 +27,14 @@ export class ThemeSelectorComponent {
     }
   }
 
+  mode() {
+    return "" + this.isDarkMode;
+  }
+
+  changeMode() {
+    const isChecked = this.toggle.nativeElement.getAttribute('aria-checked') === 'true';
+    // Toggle the state
+    this.toggle?.nativeElement.setAttribute('aria-checked', !isChecked);
+    this.changeTheme()
+  }
 }
