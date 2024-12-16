@@ -1,4 +1,4 @@
-<div class="rounded-lg border-2 drop-shadow-md dark:border-slate-800 border-slate-50 min-h-52 dark:bg-slate-800 m-5 p-5 bg-slate-50">
+<div class="rounded-lg border-2 drop-shadow-md dark:border-slate-800 border-slate-50 dark:bg-slate-800 m-5 p-5 bg-slate-50">
   <header class="mb-6">
     <h4 class="font-bold "><a href="{{project.html_url}}" class="hover:text-yellow-500">{{project.name}}</a> &nbsp;
       <img ngSrc="star.png" [width]="15" [height]="15" class="inline" alt="star icon"/> {{project.stargazers_count}}
@@ -6,7 +6,7 @@
       {{project.forks}}
     </h4>
   </header>
-  <article>
+  <article class="sm:min-h-52 lg:min-h-36 xl:min-h-28">
     <span>{{project.description}}</span>
   </article>
   <footer class="mt-6">
