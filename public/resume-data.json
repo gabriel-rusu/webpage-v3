@@ -92,10 +92,11 @@
         "startDate": "03/10/2022",
         "endDate": "11/09/2024"
       },
-      "description": "I was one of the top students in my program, receiving a merit scholarship for my academic performance. I received the grade 10 for my diploma project which was centered on 'Pedestrian detection and tracking for Autonomous Vehicles'",
+      "description": "I worked on a variety of projects across different subfields of AI and gained experience in handling real-world constraints using advanced model architectures. Throughout my work in Computer Vision, Deep Learning, Data Science, Natural Language Processing, and Advanced AI Techniques, I implemented a wide range of projects. These ranged from simpler tasks, such as predicting stock prices for various companies, to more complex ones like pedestrian tracking and detection and autonomous drone flight.",
       "achievements": [
-        "I was one of the top students in my program, receiving a merit scholarship for my academic performance",
-        "Worked on various projects including an autopilot project for drone flight based on color segmentation & scene understanding"
+        "earned merit scholarship for my academic performance",
+        "implemented an autonomous drone system during the Introduction to Robotics class. The system had to work under a lot of constrains in real-time on limited hardware resources.",
+        "developed a new model for Pedestrian Tracking and Detection which was more efficient than the current approaches on limited hardware."
       ],
       "finalGrade": "10"
     },
