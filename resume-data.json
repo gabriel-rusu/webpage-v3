@@ -19,13 +19,7 @@
     ]
   },
   "about": {
-    "description": "I’m a team lead and software engineer, blending practical systems engineering skills with strategic team leadership. My master’s degree in AI adds depth to my technical background, making me open to incorporating innovative AI-driven approaches where they align with project goals.",
-    "passions": [
-      "code",
-      "hike",
-      "read",
-      "travel"
-    ]
+    "description": "I am a team lead and software engineer with a rich blend of technical expertise and leadership experience. With a foundation in systems engineering and a master’s degree in Artificial Intelligence, I bring a forward-thinking approach to solving complex problems. I specialize in designing scalable, efficient software solutions while fostering collaborative, high-performing teams.\n\nMy passion lies in bridging practical engineering skills with innovative AI-driven strategies to deliver impactful results. From leading the development of enterprise-grade applications to mentoring teams and streamlining workflows, I thrive in creating solutions that blend technical excellence with user-centric design.\n\nBeyond my professional life, I am deeply passionate about continuous learning and exploration. Whether I’m hiking in nature, diving into a good book, traveling to new places, or experimenting with cutting-edge technology, I am always looking for opportunities to grow.\n\nMore details about my experience, achievements, and projects are available as you scroll."
   },
   "experience": [
     {
@@ -42,12 +36,24 @@
           "Code review",
           "Fixing production problems",
           "Contributing to ongoing projects",
-          "Offering technical support for other colleagues"
+          "Mentored & helped internship colleagues with the problems they encountered",
+          "Estimating the time needed to implement the requested features and assigning some of the tasks to other colleagues",
+          "Break down the documentation and client requests into tasks and sub-tasks.",
+          "Meeting the projects deadlines",
+          "Offering technical support  for other colleagues"
         ],
         "achievements": [
-          "Worked on implementing some of the most important applications for the Romanian DMV system",
-          "Organized, scheduled, and managed a team of 4 in implementing new apps that allow dealers to provisionally register new cars online",
-          "Designed a pleasant and intuitive UI for the new apps"
+          "Directed a team of 4 software developers through the full lifecycle of the Vehicle Registration Portal, enabling leasing companies to provisionally register vehicles on behalf of individuals, with a focus on data aggregation capabilities tailored for leasing companies.",
+          "Enhanced the provisional registration process for new vehicles by replacing the manual completion of owner details with a personalization app that records the information in the system and prints the owner details directly onto the blank authorization form.",
+          "Automated vehicle data entry for the national provisional vehicle registration system, significantly increasing efficiency for millions of users. Independently implemented external validation for new vehicle registrations and upgraded both frontend and backend applications to support this functionality.",
+          "Improved application performance by eliminating redundant database queries and strengthened system resilience using JMS, RabbitMQ, and dead-letter queues to manage user information and configurations effectively."
+        ],
+        "summary": [
+          "Led a team of 4 developers, overseeing project lifecycle and task delegation.",
+          "Reviewed code, mentored interns, and provided technical support.",
+          "Directed the development of a Vehicle Registration Portal for leasing companies.",
+          "Automated vehicle registration processes, increasing efficiency and accuracy.",
+          "Optimized application performance by reducing redundant database queries and implementing RabbitMQ for resilience."
         ]
       },
       "timePeriod": {
@@ -66,15 +72,23 @@
           "JavaScript"
         ],
         "responsibilities": [
-          "Developed and maintained backend services and APIs to support front-end applications",
-          "Collaborated with cross-functional teams on feature planning and implementation",
+          "Code review",
+          "Provided support for code troubleshooting and debugging",
           "Participated in daily stand-ups, sprint planning, and retrospectives",
-          "Provided support for code troubleshooting and debugging"
+          "Mentored & helped internship colleagues with the problems they encountered"
         ],
         "achievements": [
-          "Played a key role in developing an online vehicle registration system used across multiple regions",
-          "Improved codebase efficiency, reducing runtime by 20%",
-          "Promoted code quality by implementing a standardized testing suite"
+          "Contributed to the development of the updated Vehicle Registration app, enabling operators to work more efficiently and reducing the time required to register a vehicle by 50%.",
+          "Led the mentoring of the internship team, guiding them in building the workspace-booking app, now actively used internally for seat management in the new office.",
+          "Designed and implemented a debug mode, providing developers with insights into UI data processing and improving issue identification and resolution.",
+          "Created an efficient caching mechanism using RxJS to prevent the repeated loading of large dictionaries (e.g., streets), significantly enhancing UI performance.",
+          "Strengthened collaboration with the QA team by introducing new practices among developers, resulting in improved bug resolution processes for shared libraries."
+        ],
+        "summary": [
+          "Debugged and reviewed code, mentored interns, and supported QA efforts.",
+          "Contributed to the development of a Vehicle Registration app and workspace booking app.",
+          "Created a caching mechanism to optimize UI performance.",
+          "Enhanced bug-handling practices by fostering collaboration between QA and development teams."
         ]
       },
       "timePeriod": {
