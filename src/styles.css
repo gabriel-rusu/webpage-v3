@@ -4,9 +4,7 @@
 @tailwind utilities;
 
 body {
-  /*font-family: "Doto", sans-serif;*/
-  /*font-family: "Edu AU VIC WA NT Pre", cursive;*/
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Montserrat", serif;
 }
 
 .mouse-icon {
