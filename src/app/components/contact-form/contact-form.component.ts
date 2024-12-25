@@ -30,11 +30,10 @@ export class ContactFormComponent {
     emailjs.init('3OBVYlu1jm4XBAIb6');
     emailjs.send('service_rv6skes', 'template_vbmyzuh', templateParams).then(
       (response) => {
-        console.log('SUCCESS!', response.status, response.text);
         this.form?.resetForm()
       },
       (error) => {
-        console.log('FAILED...', error);
+        console.error('FAILED...', error);
       },
     );
   }

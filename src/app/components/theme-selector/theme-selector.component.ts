@@ -26,8 +26,6 @@ export class ThemeSelectorComponent implements OnInit {
 
 
   changeTheme() {
-    console.log('Here ?');
-    console.log(document.getElementsByTagName('html'))
     const htmlTag = document.getElementsByTagName('html').item(0);
     if (htmlTag?.classList.contains('dark')) {
       htmlTag.classList.remove('dark')
