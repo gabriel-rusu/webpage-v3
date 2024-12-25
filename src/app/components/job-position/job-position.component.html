@@ -9,6 +9,15 @@
       </button>
     }
     <div>
+      <span class="font-bold">Tech Stack: </span>
+      @for (tech of job.jobDescription.techStack; track tech) {
+        <span>{{ tech }}</span>
+        @if ($index !== $count - 1) {
+          <span>, </span>
+        } @else {
+          <div></div>
+        }
+      }
       @if (moreInfo) {
         <span class="font-bold">Responsibilities:</span>
         <ul class="list-disc pl-10 pb-2">
@@ -22,15 +31,8 @@
             <li>{{ a }}</li>
           }
         </ul>
-
-        <span class="font-bold">Tech Stack: </span>
-        @for (tech of job.jobDescription.techStack; track tech) {
-          <span>{{ tech }}</span>
-          @if ($index !== $count - 1) {
-            <span>, </span>
-          }
-        }
       } @else {
+        <span class="font-bold">Summary:</span>
         <ul class="list-disc pl-10 pb-2">
           @for (a of job.jobDescription.summary; track a) {
             <li>{{ a }}</li>
