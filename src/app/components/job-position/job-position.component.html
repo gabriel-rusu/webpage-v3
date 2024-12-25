@@ -3,27 +3,39 @@
              start="{{job.timePeriod?.startDate}}"
              end="{{job.timePeriod?.endDate}}"
              [isNotLast]="isNonLast">
+    @if (isMobileDevice) {
+      <button class="ml-10 bg-sky-500 hover:bg-sky-700 rounded-lg p-1 block"
+              (click)="moreInfo=!moreInfo">{{ moreInfo ? 'Hide' : 'More' }} info
+      </button>
+    }
     <div>
-      <span class="font-bold">Responsibilities:</span>
-      <ul class="list-disc pl-10 pb-2">
-        @for (r of job.jobDescription.responsibilities; track r) {
-          <li>{{r}}</li>
-        }
-      </ul>
+      @if (moreInfo) {
+        <span class="font-bold">Responsibilities:</span>
+        <ul class="list-disc pl-10 pb-2">
+          @for (r of job.jobDescription.responsibilities; track r) {
+            <li>{{ r }}</li>
+          }
+        </ul>
+        <span class="font-bold">Achievements:</span>
+        <ul class="list-disc pl-10 pb-2">
+          @for (a of job.jobDescription.achievements; track a) {
+            <li>{{ a }}</li>
+          }
+        </ul>
 
-      <span class="font-bold">Achievements:</span>
-      <ul class="list-disc pl-10 pb-2">
-        @for (a of job.jobDescription.achievements; track a) {
-          <li>{{a}}</li>
+        <span class="font-bold">Tech Stack: </span>
+        @for (tech of job.jobDescription.techStack; track tech) {
+          <span>{{ tech }}</span>
+          @if ($index !== $count - 1) {
+            <span>, </span>
+          }
         }
-      </ul>
-
-      <span class="font-bold">Tech Stack: </span>
-      @for (tech of job.jobDescription.techStack; track tech) {
-        <span>{{ tech }}</span>
-        @if ($index !== $count - 1) {
-          <span>, </span>
-        }
+      } @else {
+        <ul class="list-disc pl-10 pb-2">
+          @for (a of job.jobDescription.summary; track a) {
+            <li>{{ a }}</li>
+          }
+        </ul>
       }
     </div>
   </app-event>

@@ -1,6 +1,6 @@
 <app-theme-selector></app-theme-selector>
 @if (resumeData) {
-  <div class="lg:px-10 py-10">
+  <div class="lg:px-10 py-10 px-5">
     <app-section>
       <div class="h-screen flex flex-col items-center justify-center pb-40">
         <img ngSrc="profile-picture.jpeg" class="mx-auto block" [width]="320" [height]="320" style="border-radius: 50% "
@@ -48,16 +48,10 @@
         </div>
       </div>
     </app-section>
-    <app-section sectionName="About" class="px-5">
+    <app-section sectionName="About">
       <p>
         {{ resumeData.about.description }}
       </p>
-      <p>In my spare time I like to:</p>
-      <ul class="list-disc pl-10">
-        @for (passion of resumeData.about.passions; track passion) {
-          <li>{{ passion }}</li>
-        }
-      </ul>
     </app-section>
     <app-section sectionName="Experience" class="grid place-items-center">
       @for (job of resumeData.experience; track job.jobDescription) {

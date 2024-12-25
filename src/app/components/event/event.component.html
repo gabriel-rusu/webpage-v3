@@ -11,8 +11,10 @@
           <img ngSrc="calendar.svg" alt="event" height="24" width="24" class="svg-theme dark:svg-theme"/>
           <p class="inline ml-4 mt-1 ">{{ start }} - {{ end }}</p>
         </div>
+        <ng-content select="button"></ng-content>
       </div>
     </div>
+
     <div class="pt-1.5 pl-10 pr-10 grid-cols-subgrid col-span-2">
       <ng-content>
 

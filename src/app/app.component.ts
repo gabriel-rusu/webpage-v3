@@ -44,14 +44,11 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.httpClient.get('/resume-data.json').subscribe(((res: any) => {
+    this.httpClient.get('https://raw.githubusercontent.com/gabriel-rusu/webpage-v3/refs/heads/main/public/resume-data.json').subscribe(((res: any) => {
       this.resumeData = res
-      console.log('Here ?');
-      console.log(res)
     }));
 
     this.githubClient.getProjects('gabriel-rusu').subscribe((projects) => {
-      console.log(projects);
       projects.forEach(project => project.updated_at = new Date(project.updated_at))
       projects = projects.filter(project => project.description &&  project.description?.length > 0 && !project.description.includes('work in progress'));
       this.allProjects =
