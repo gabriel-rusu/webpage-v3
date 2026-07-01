@@ -1,8 +1,8 @@
-<section #sectionContent class="pb-10" style="min-height: 100vh" [ngClass]="{myHidden: loadingScreen.isLoading(),
-show:  !loadingScreen.isLoading()}">
-  @if (sectionName) {
-    <h2
-      class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10 text-center lg:text-left">{{ sectionName }}</h2>
-  }
-  <ng-content></ng-content>
+<section #sectionContent class="pb-10" style="min-height: 100vh">
+  <div class="scroll-reveal">
+    @if (sectionName) {
+      <h2 class="font-extrabold dark:text-white text-black font-serif text-6xl pt-10 pb-10 text-center lg:text-left">{{ sectionName }}</h2>
+    }
+    <ng-content></ng-content>
+  </div>
 </section>

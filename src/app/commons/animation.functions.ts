@@ -1,14 +1,15 @@
-export function animateEntryForElement(element: any) {
+import { WritableSignal } from '@angular/core';
+export function animateEntryForElement(element: HTMLElement, show: WritableSignal<boolean>) {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry?.isIntersecting) {
-        // @ts-ignore
-        this.show = true;
-      } else {
-        // @ts-ignore
-        this.show = false;
+      if (entry.isIntersecting) {
+        show.set(true);
+        observer.unobserve(element);
       }
-    })
-  })
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px' // triggers 100px before it fully enters viewport
+  });
   observer.observe(element);
 }
