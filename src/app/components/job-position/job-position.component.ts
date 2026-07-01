@@ -4,13 +4,12 @@ import {Job} from "../../types/job";
 import {isMobileDevice} from "../../commons/check.functions";
 
 @Component({
-  selector: 'app-job-position',
-  standalone: true,
-  imports: [
-    EventComponent
-  ],
-  templateUrl: './job-position.component.html',
-  styleUrl: './job-position.component.css'
+    selector: 'app-job-position',
+    imports: [
+        EventComponent
+    ],
+    templateUrl: './job-position.component.html',
+    styleUrl: './job-position.component.css'
 })
 export class JobPositionComponent implements OnInit {
   @Input({required: true}) job!: Job;

@@ -2,11 +2,10 @@ import {AfterViewInit, Component, computed, Input, signal, Signal, WritableSigna
 import {isIndexAtTheEnd, isIndexAtTheStart} from "../../commons/string.functions";
 
 @Component({
-  selector: 'app-dynamic-typing',
-  standalone: true,
-  imports: [],
-  templateUrl: './dynamic-typing.component.html',
-  styleUrl: './dynamic-typing.component.css'
+    selector: 'app-dynamic-typing',
+    imports: [],
+    templateUrl: './dynamic-typing.component.html',
+    styleUrl: './dynamic-typing.component.css'
 })
 export class DynamicTypingComponent implements AfterViewInit{
   @Input({required: true}) textToAnimate!: string[];

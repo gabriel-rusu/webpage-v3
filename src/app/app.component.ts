@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, signal, WritableSignal} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {HttpClient} from "@angular/common/http";
 import {Resume} from "./types/resume";
@@ -12,10 +12,10 @@ import {GitHubClientService} from "./services/git-hub-client.service";
 import {GitHubProject} from "./types/github-projects.type";
 import {GhProjectComponent} from "./components/gh-project/gh-project.component";
 import {ContactFormComponent} from "./components/contact-form/contact-form.component";
+import {LoadingScreenService} from "./services/loading-screen.service";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [
     NgOptimizedImage,
     ThemeSelectorComponent,
@@ -32,30 +32,34 @@ import {ContactFormComponent} from "./components/contact-form/contact-form.compo
 })
 export class AppComponent implements OnInit {
   title = 'webpage-v3';
-  resumeData!: Resume;
+  // @ts-ignore
+  resumeData = signal<Resume>(null);
   allProjects: GitHubProject[] = [];
-  mostStarredProjects: GitHubProject[] = [];
-  recentlyUpdatedProjects: GitHubProject[] = [];
+  mostStarredProjects: WritableSignal<GitHubProject[]> = signal([]);
+  recentlyUpdatedProjects: WritableSignal<GitHubProject[]> = signal([]);
 
 
-  constructor(private httpClient: HttpClient, private githubClient: GitHubClientService) {
-
+  constructor(private httpClient: HttpClient, private githubClient: GitHubClientService,
+              protected loadingScreen: LoadingScreenService) {
+    this.loadingScreen.start();
   }
 
 
   ngOnInit(): void {
     this.httpClient.get('https://raw.githubusercontent.com/gabriel-rusu/webpage-v3/refs/heads/main/public/resume-data.json').subscribe(((res: any) => {
-      this.resumeData = res
+      this.loadingScreen.stop();
+      this.resumeData.set(res);
     }));
-
+    this.loadingScreen.start();
     this.githubClient.getProjects('gabriel-rusu').subscribe((projects) => {
       projects.forEach(project => project.updated_at = new Date(project.updated_at))
-      projects = projects.filter(project => project.description &&  project.description?.length > 0 && !project.description.includes('work in progress'));
+      projects = projects.filter(project => project.description && project.description?.length > 0 && !project.description.includes('work in progress'));
       this.allProjects =
-      projects.sort((a, b) => b.stargazers_count - a.stargazers_count)
-      this.mostStarredProjects = projects.filter((project, index) => index < 3);
-      this.recentlyUpdatedProjects = projects.sort((a, b) =>
-        b.updated_at.getTime() - a.updated_at.getTime()).filter((project, index) => index < 3);
+        projects.sort((a, b) => b.stargazers_count - a.stargazers_count)
+      this.mostStarredProjects.set(projects.filter((project, index) => index < 3));
+      this.recentlyUpdatedProjects.set(projects.sort((a, b) =>
+        b.updated_at.getTime() - a.updated_at.getTime()).filter((project, index) => index < 3));
+      this.loadingScreen.stop();
     })
   }
 }

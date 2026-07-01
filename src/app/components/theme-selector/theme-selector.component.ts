@@ -1,5 +1,5 @@
 import {Component, HostBinding, Input, OnInit, ViewChild} from '@angular/core';
-import {NgIf} from "@angular/common";
+
 
 @Component({
   selector: 'app-theme-selector',
