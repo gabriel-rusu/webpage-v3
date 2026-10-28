@@ -8,4 +8,5 @@ export interface GitHubProject {
   stargazers_count: number;
   updated_at: Date;
   forks: number;
+  homepage: string
 }
